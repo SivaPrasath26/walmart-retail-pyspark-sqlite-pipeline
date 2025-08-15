@@ -38,8 +38,8 @@ project_root/
 
 ### 1️. Clone Repo
 ```bash
-git clone https://github.com/YOUR_USERNAME/retail-pyspark-sqlite-pipeline.git
-cd retail-pyspark-sqlite-pipeline
+git clone https://github.com/SivaPrasath26/walmart-retail-pyspark-sqlite-pipeline.git
+cd walmart-retail-pyspark-sqlite-pipeline
 ```
 ---
 ### 2️. Create & Activate Virtual Environment
