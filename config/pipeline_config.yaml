@@ -1,0 +1,92 @@
+# Pipeline config: all paths, dataset slug, schemas, rename maps, and output table names.
+paths:
+  raw_dir: "data/raw"
+  curated_dir: "data/curated"
+  log_file: "logs/pipeline.log"
+  sqlite_db_path: "data/curated/retail_pipeline.db"
+
+kaggle:
+  # Kaggle dataset slug (owner/dataset). Example: 'WalmartLabs/walmart-recruiting-store-sales-forecasting'
+  # You can change this to any dataset slug that contains the required CSVs.
+  competition: "walmart-recruiting-store-sales-forecasting"
+  file_patterns:
+    - "train.csv"
+    - "test.csv"
+    - "features.csv"
+    - "stores.csv"
+  download_timeout_sec: 900
+
+spark:
+  app_name: "RetailAnalyticsPipeline"
+  master: "local[*]"
+  packages:
+    - "org.xerial:sqlite-jdbc:3.50.3.0"
+  shuffle_partitions: 8
+  local_ip: "127.0.0.1"
+  driver_bind_address: "127.0.0.1"
+
+schema:
+  # Minimal expected columns with Spark-friendly SQL types for casting
+  train:
+    Date: "string"
+    Store: "integer"
+    Dept: "integer"
+    Weekly_Sales: "double"
+    IsHoliday: "boolean"
+  features:
+    Date: "string"
+    Store: "integer"
+    Temperature: "double"
+    Fuel_Price: "double"
+    MarkDown1: "double"
+    MarkDown2: "double"
+    MarkDown3: "double"
+    MarkDown4: "double"
+    MarkDown5: "double"
+    CPI: "double"
+    Unemployment: "double"
+    IsHoliday: "boolean"
+  stores:
+    Store: "integer"
+    Type: "string"
+    Size: "integer"
+
+rename_columns:
+  train:
+    Date: "date"
+    Store: "store_id"
+    Dept: "department_id"
+    Weekly_Sales: "weekly_sales"
+    IsHoliday: "is_holiday"
+  features:
+    Date: "date"
+    Store: "store_id"
+    Temperature: "temperature_f"
+    Fuel_Price: "fuel_price"
+    MarkDown1: "markdown_1"
+    MarkDown2: "markdown_2"
+    MarkDown3: "markdown_3"
+    MarkDown4: "markdown_4"
+    MarkDown5: "markdown_5"
+    CPI: "cpi"
+    Unemployment: "unemployment_rate"
+    IsHoliday: "is_holiday"
+  stores:
+    Store: "store_id"
+    Type: "store_type"
+    Size: "store_size"
+
+quality_thresholds:
+  max_null_fraction_per_column: 0.6
+  fail_on_schema_mismatch: false
+  drop_duplicates: true
+
+output:
+  jdbc_url: "jdbc:sqlite:data/curated/retail_pipeline.db"
+  driver: "org.sqlite.JDBC"
+  mode: "overwrite"
+  tables:
+    sales_curated: "sales_curated"
+    agg_store_dept: "agg_store_dept"
+    agg_store_type_year: "agg_store_type_year"
+    holidays_vs_normal: "holidays_vs_normal"

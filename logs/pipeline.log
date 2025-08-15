@@ -1,0 +1,110 @@
+2025-08-15 18:54:55,137 [INFO] __main__ - Starting Retail Analytics Pipeline
+2025-08-15 18:54:55,143 [INFO] ingestion_kaggle - Downloading Kaggle dataset 'walmart-recruiting-store-sales-forecasting' into data\raw
+2025-08-15 18:56:14,827 [INFO] __main__ - Starting Retail Analytics Pipeline
+2025-08-15 18:56:14,845 [INFO] ingestion_kaggle - Downloading Kaggle dataset 'walmart-recruiting-store-sales-forecasting' into data\raw
+2025-08-15 18:57:44,718 [INFO] __main__ - Starting Retail Analytics Pipeline
+2025-08-15 18:57:44,738 [INFO] ingestion_kaggle - Downloading Kaggle dataset 'walmart-recruiting-store-sales-forecasting' into data\raw
+2025-08-15 18:57:47,539 [ERROR] ingestion_kaggle - Kaggle CLI returned non-zero: Command '['kaggle', 'datasets', 'download', '-d', 'walmart-recruiting-store-sales-forecasting', '-p', 'data\\raw', '-o']' returned non-zero exit status 1.
+2025-08-15 19:00:06,058 [INFO] __main__ - Starting Retail Analytics Pipeline
+2025-08-15 19:00:06,058 [INFO] ingestion_kaggle - Downloading Kaggle dataset 'walmart-recruiting-store-sales-forecasting' into data\raw
+2025-08-15 19:00:07,498 [ERROR] ingestion_kaggle - Kaggle CLI returned non-zero: Command '['kaggle', 'datasets', 'download', '-d', 'walmart-recruiting-store-sales-forecasting', '-p', 'data\\raw', '-o']' returned non-zero exit status 1.
+2025-08-15 19:03:38,904 [INFO] __main__ - Starting Retail Analytics Pipeline
+2025-08-15 19:05:18,857 [INFO] __main__ - Starting Retail Analytics Pipeline
+2025-08-15 19:08:01,780 [INFO] __main__ - Starting Retail Analytics Pipeline
+2025-08-15 19:08:01,780 [INFO] ingestion_kaggle - Downloading Kaggle dataset 'walmart-recruiting-store-sales-forecasting' into data\raw
+2025-08-15 19:08:03,396 [ERROR] ingestion_kaggle - Kaggle CLI returned non-zero: Command '['kaggle', 'competitions', 'download', '-c', 'walmart-recruiting-store-sales-forecasting', '-p', 'data\\raw', '-o']' returned non-zero exit status 1.
+2025-08-15 19:13:49,746 [INFO] __main__ - Starting Retail Analytics Pipeline
+2025-08-15 19:13:49,753 [INFO] ingestion_kaggle - Downloading Kaggle dataset 'walmart-recruiting-store-sales-forecasting' into data\raw
+2025-08-15 19:13:54,637 [INFO] ingestion_kaggle - Extracting archive: walmart-recruiting-store-sales-forecasting.zip
+2025-08-15 19:13:54,676 [INFO] ingestion_kaggle - Ingestion finished. Kept files: ['stores.csv']
+2025-08-15 19:53:26,199 [INFO] __main__ - Starting Retail Analytics Pipeline
+2025-08-15 19:53:26,204 [INFO] ingestion_kaggle - Downloading Kaggle dataset 'walmart-recruiting-store-sales-forecasting' into data\raw
+2025-08-15 19:54:08,946 [INFO] __main__ - Starting Retail Analytics Pipeline
+2025-08-15 19:54:08,961 [INFO] ingestion_kaggle - Downloading Kaggle dataset 'walmart-recruiting-store-sales-forecasting' into data\raw
+2025-08-15 19:54:14,086 [INFO] ingestion_kaggle - Extracting archive: features.csv.zip
+2025-08-15 19:54:14,108 [INFO] ingestion_kaggle - Extracting archive: sampleSubmission.csv.zip
+2025-08-15 19:54:14,113 [INFO] ingestion_kaggle - Extracting archive: test.csv.zip
+2025-08-15 19:54:14,124 [INFO] ingestion_kaggle - Extracting archive: train.csv.zip
+2025-08-15 19:54:14,172 [INFO] ingestion_kaggle - Extracting archive: walmart-recruiting-store-sales-forecasting.zip
+2025-08-15 19:54:14,206 [INFO] ingestion_kaggle - Moving unexpected file sampleSubmission.csv to data\raw\_ignored
+2025-08-15 19:54:14,212 [INFO] ingestion_kaggle - Ingestion finished. Kept files: ['features.csv', 'stores.csv', 'test.csv', 'train.csv']
+2025-08-15 19:54:18,385 [INFO] py4j.clientserver - Closing down clientserver connection
+2025-08-15 19:59:47,540 [INFO] __main__ - Starting Retail Analytics Pipeline
+2025-08-15 19:59:47,540 [INFO] ingestion_kaggle - Downloading Kaggle dataset 'walmart-recruiting-store-sales-forecasting' into data\raw
+2025-08-15 19:59:53,399 [INFO] ingestion_kaggle - Extracting archive: features.csv.zip
+2025-08-15 19:59:53,427 [INFO] ingestion_kaggle - Extracting archive: sampleSubmission.csv.zip
+2025-08-15 19:59:53,445 [INFO] ingestion_kaggle - Extracting archive: test.csv.zip
+2025-08-15 19:59:53,462 [INFO] ingestion_kaggle - Extracting archive: train.csv.zip
+2025-08-15 19:59:53,520 [INFO] ingestion_kaggle - Extracting archive: walmart-recruiting-store-sales-forecasting.zip
+2025-08-15 19:59:53,565 [INFO] ingestion_kaggle - Moving unexpected file sampleSubmission.csv to data\raw\_ignored
+2025-08-15 19:59:53,583 [INFO] ingestion_kaggle - Ingestion finished. Kept files: ['features.csv', 'stores.csv', 'test.csv', 'train.csv']
+2025-08-15 19:59:57,695 [INFO] __main__ - Loading train.csv
+2025-08-15 20:00:00,210 [INFO] __main__ - Loading features.csv
+2025-08-15 20:00:00,337 [INFO] __main__ - Loading stores.csv
+2025-08-15 20:00:00,424 [INFO] __main__ - Running quality checks for train
+2025-08-15 20:00:08,078 [INFO] quality_checks - Quality checks for train completed. rows=421570, dup=0
+2025-08-15 20:00:08,080 [INFO] __main__ - Running quality checks for features
+2025-08-15 20:00:10,118 [INFO] quality_checks - Quality checks for features completed. rows=8190, dup=0
+2025-08-15 20:00:10,118 [WARNING] __main__ - QC issue (features): High null fraction in MarkDown2: 64.33%
+2025-08-15 20:00:10,118 [INFO] __main__ - Running quality checks for stores
+2025-08-15 20:00:10,790 [INFO] quality_checks - Quality checks for stores completed. rows=45, dup=0
+2025-08-15 20:00:10,965 [INFO] py4j.clientserver - Closing down clientserver connection
+2025-08-15 20:09:18,857 [INFO] __main__ - Starting Retail Analytics Pipeline
+2025-08-15 20:09:18,857 [INFO] ingestion_kaggle - Downloading Kaggle dataset 'walmart-recruiting-store-sales-forecasting' into data\raw
+2025-08-15 20:09:23,877 [INFO] ingestion_kaggle - Extracting archive: features.csv.zip
+2025-08-15 20:09:23,895 [INFO] ingestion_kaggle - Extracting archive: sampleSubmission.csv.zip
+2025-08-15 20:09:23,914 [INFO] ingestion_kaggle - Extracting archive: test.csv.zip
+2025-08-15 20:09:23,933 [INFO] ingestion_kaggle - Extracting archive: train.csv.zip
+2025-08-15 20:09:23,988 [INFO] ingestion_kaggle - Extracting archive: walmart-recruiting-store-sales-forecasting.zip
+2025-08-15 20:09:24,021 [INFO] ingestion_kaggle - Moving unexpected file sampleSubmission.csv to data\raw\_ignored
+2025-08-15 20:09:24,032 [INFO] ingestion_kaggle - Ingestion finished. Kept files: ['features.csv', 'stores.csv', 'test.csv', 'train.csv']
+2025-08-15 20:09:28,139 [INFO] __main__ - Loading train.csv
+2025-08-15 20:09:30,140 [INFO] __main__ - Loading features.csv
+2025-08-15 20:09:30,261 [INFO] __main__ - Loading stores.csv
+2025-08-15 20:09:30,337 [INFO] __main__ - Running quality checks for train
+2025-08-15 20:09:36,196 [INFO] quality_checks - Quality checks for train completed. rows=421570, dup=0
+2025-08-15 20:09:36,198 [INFO] __main__ - Running quality checks for features
+2025-08-15 20:09:38,276 [INFO] quality_checks - Quality checks for features completed. rows=8190, dup=0
+2025-08-15 20:09:38,276 [WARNING] __main__ - QC issue (features): High null fraction in MarkDown2: 64.33%
+2025-08-15 20:09:38,276 [INFO] __main__ - Running quality checks for stores
+2025-08-15 20:09:38,926 [INFO] quality_checks - Quality checks for stores completed. rows=45, dup=0
+2025-08-15 20:09:38,954 [INFO] transform_spark - typed_train columns: ['Date', 'Store', 'Dept', 'Weekly_Sales', 'IsHoliday']
+2025-08-15 20:09:38,954 [INFO] transform_spark - typed_features columns: ['Date', 'Store', 'Temperature', 'Fuel_Price', 'MarkDown1', 'MarkDown2', 'MarkDown3', 'MarkDown4', 'MarkDown5', 'CPI', 'Unemployment', 'IsHoliday']
+2025-08-15 20:09:38,954 [INFO] transform_spark - typed_stores columns: ['Store', 'Type', 'Size']
+2025-08-15 20:09:38,954 [INFO] transform_spark - train columns after rename: ['Date', 'Store', 'Dept', 'Weekly_Sales', 'IsHoliday']
+2025-08-15 20:09:39,092 [INFO] py4j.clientserver - Closing down clientserver connection
+2025-08-15 20:12:08,754 [INFO] __main__ - Starting Retail Analytics Pipeline
+2025-08-15 20:12:08,754 [INFO] ingestion_kaggle - Downloading Kaggle dataset 'walmart-recruiting-store-sales-forecasting' into data\raw
+2025-08-15 20:12:13,734 [INFO] ingestion_kaggle - Extracting archive: features.csv.zip
+2025-08-15 20:12:13,750 [INFO] ingestion_kaggle - Extracting archive: sampleSubmission.csv.zip
+2025-08-15 20:12:13,768 [INFO] ingestion_kaggle - Extracting archive: test.csv.zip
+2025-08-15 20:12:13,787 [INFO] ingestion_kaggle - Extracting archive: train.csv.zip
+2025-08-15 20:12:13,828 [INFO] ingestion_kaggle - Extracting archive: walmart-recruiting-store-sales-forecasting.zip
+2025-08-15 20:12:13,873 [INFO] ingestion_kaggle - Moving unexpected file sampleSubmission.csv to data\raw\_ignored
+2025-08-15 20:12:13,884 [INFO] ingestion_kaggle - Ingestion finished. Kept files: ['features.csv', 'stores.csv', 'test.csv', 'train.csv']
+2025-08-15 20:12:17,828 [INFO] __main__ - Loading train.csv
+2025-08-15 20:12:19,791 [INFO] __main__ - Loading features.csv
+2025-08-15 20:12:19,881 [INFO] __main__ - Loading stores.csv
+2025-08-15 20:12:19,965 [INFO] __main__ - Running quality checks for train
+2025-08-15 20:12:25,675 [INFO] quality_checks - Quality checks for train completed. rows=421570, dup=0
+2025-08-15 20:12:25,675 [INFO] __main__ - Running quality checks for features
+2025-08-15 20:12:27,685 [INFO] quality_checks - Quality checks for features completed. rows=8190, dup=0
+2025-08-15 20:12:27,685 [WARNING] __main__ - QC issue (features): High null fraction in MarkDown2: 64.33%
+2025-08-15 20:12:27,685 [INFO] __main__ - Running quality checks for stores
+2025-08-15 20:12:28,349 [INFO] quality_checks - Quality checks for stores completed. rows=45, dup=0
+2025-08-15 20:12:28,380 [INFO] transform_spark - typed_train columns: ['Date', 'Store', 'Dept', 'Weekly_Sales', 'IsHoliday']
+2025-08-15 20:12:28,380 [INFO] transform_spark - typed_features columns: ['Date', 'Store', 'Temperature', 'Fuel_Price', 'MarkDown1', 'MarkDown2', 'MarkDown3', 'MarkDown4', 'MarkDown5', 'CPI', 'Unemployment', 'IsHoliday']
+2025-08-15 20:12:28,381 [INFO] transform_spark - typed_stores columns: ['Store', 'Type', 'Size']
+2025-08-15 20:12:28,381 [INFO] transform_spark - train columns after rename: ['Date', 'Store', 'Dept', 'Weekly_Sales', 'IsHoliday']
+2025-08-15 20:12:28,651 [INFO] transform_spark - Built curated tables: ['sales_curated', 'agg_store_dept', 'agg_store_type_year', 'holidays_vs_normal']
+2025-08-15 20:12:28,651 [INFO] __main__ - Writing to SQLite URL: jdbc:sqlite:data/curated/retail_pipeline.db
+2025-08-15 20:12:29,337 [INFO] __main__ - Writing table 'sales_curated' (rows=421570) ...
+2025-08-15 20:12:32,546 [INFO] __main__ - Wrote table 'sales_curated' to SQLite.
+2025-08-15 20:12:33,131 [INFO] __main__ - Writing table 'agg_store_dept' (rows=100181) ...
+2025-08-15 20:12:34,596 [INFO] __main__ - Wrote table 'agg_store_dept' to SQLite.
+2025-08-15 20:12:35,137 [INFO] __main__ - Writing table 'agg_store_type_year' (rows=9) ...
+2025-08-15 20:12:35,951 [INFO] __main__ - Wrote table 'agg_store_type_year' to SQLite.
+2025-08-15 20:12:36,385 [INFO] __main__ - Writing table 'holidays_vs_normal' (rows=6) ...
+2025-08-15 20:12:37,068 [INFO] __main__ - Wrote table 'holidays_vs_normal' to SQLite.
+2025-08-15 20:12:37,068 [INFO] __main__ - Pipeline completed. SQLite DB available at: data/curated/retail_pipeline.db
+2025-08-15 20:12:37,447 [INFO] py4j.clientserver - Closing down clientserver connection

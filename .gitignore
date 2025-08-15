@@ -1,0 +1,18 @@
+# Python virtual environment
+.venv/
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+# logs/
+# *.log
+
+# SQLite database (optional, if you don't want to commit DB)
+#data/curated/*.db
