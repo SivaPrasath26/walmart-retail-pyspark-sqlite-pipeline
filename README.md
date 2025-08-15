@@ -1,7 +1,7 @@
 #  Walmart Retail PySpark SQLite Pipeline
 
 ##  Overview
-This project demonstrates an **enterprise-grade PySpark data pipeline** that ingests the **Retail Data Analytics (Walmart)** dataset from Kaggle, performs data quality checks, transformations, and outputs a curated dataset into a **local SQLite database** — ready for **Power BI** or other BI tools.
+This project demonstrates an **enterprise-grade PySpark data pipeline** that ingests the **Retail Data Analytics (Walmart)** dataset from Kaggle, performs data quality checks, transformations, and outputs a curated dataset into a **local SQLite database** ready for **Power BI** or other BI tools.
 
 It is designed with **modular architecture**, **YAML-based configuration**, and **production best practices**.
 
