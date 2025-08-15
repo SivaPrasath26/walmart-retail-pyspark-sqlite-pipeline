@@ -9,6 +9,7 @@ It is designed with **modular architecture**, **YAML-based configuration**, and 
 
 ##  Folder Structure
 
+```markdown
 project_root/
 │
 ├── config/
@@ -31,7 +32,7 @@ project_root/
 ├── requirements.txt          # Python dependencies
 ├── README.md                 # Project documentation
 └── .env                      # Kaggle API credentials
-
+```
 ---
 ## Setup Instructions
 
