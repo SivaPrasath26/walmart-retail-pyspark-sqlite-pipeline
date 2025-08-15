@@ -29,6 +29,9 @@ project_root/
 │   ├── transform_spark.py    # PySpark transformations & enrichment
 │   ├── pipeline_orchestrator.py  # Orchestrates the pipeline
 │
+│── testing/                  
+│   ├── testing.py                # Testing any connections,sample code blocks
+│   ├── sql_queries.ipynb         # Testing final db output
 ├── requirements.txt          # Python dependencies
 ├── README.md                 # Project documentation
 └── .env                      # Kaggle API credentials
